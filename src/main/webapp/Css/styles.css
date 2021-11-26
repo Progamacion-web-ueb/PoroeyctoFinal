@@ -1,184 +1,47 @@
-/*
- * Table styles 
-*/
 
-table {
-    border: 1px solid;
-    table-layout: fixed;
-    width: 1700px;
-    font: normal 13px Arial;
-    text-align: center;
-    border-collapse: collapse;
-    border-color: black;
-}
-table th{
-     font:bold 18px Arial;
-    background-color:lightblue;
-}
-.informationPet{
-    color:black;
-    background-color:white;
-}
-th.column-header-i {
-    font-size: 30px;
-}
-
-#response{
-    text-align: center;
-}
-#div-header-log{
-    background-color: rgba(206, 203, 203, 0);
-    margin: 50px 800px 100px 800px;
-    visibility: hidden;
-}
-#espacio{
-    color: rgba(206, 203, 203, 0);
-}
-#form-log{
-    margin: 25px 50px 50px 25px;
-}
-.right {
-    padding-top: 10px;
-    padding-left: 1px;
-    margin-left: 10px;
-    text-align: center;
-    float: left;
-    width: 45%;
-    border: #0a0a0a solid 1px;
-    background: rgba(218, 218, 218, 0.57);
-}
-.left {
-    padding-left: 10px;
-    padding-top: 80px;
-    margin-left: 57px;
-    float: left;
-    position: relative;
-    width: 45%;
-    height: auto;
-}
-input {
-    width: 80%;
-    padding: 15px 22px;
-    margin: 10px 5px;
-    box-sizing: border-box;
-}
-
-#site-name-log{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 30px;
-}
-#title-login{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 50px;
-}
-#tabla-Funcionario{
-    margin-left: 200px;
-    border: 1px solid #000;
-}
-th,td{
-    border: 1px solid #000;
-}
-#imgDB{
-    width: 120px; height: 110px;
-}
-#login-box h1 {
-    color: white;
-}
-#text-Imagen{
-    margin-left: 20px;
-    margin-top: 5px;
-}
-#text-nombre{
-    margin-left: 30px;
-    margin-top: 5px;
-}
-#subir-imagen{
-    margin-left: 30px;
-    margin-top: 10px;
-}
-#mostrar-tabla{
-    margin-left:  100px;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    color: #666;
-    background: #f2f2f2;
-    font-size: 1em;
-    line-height: 1.5em;
-    padding-top: 80px;
-}
-h1 {
-    font-size: 2.3em;
-    line-height: 1.3em;
-    margin: 15px 0;
-    text-align: center;
-    font-weight: 300;
-}
-p {
-    margin: 0 0 1.5em 0;
-}
-img {
-    max-width: 100%;
-    height: auto;
-}
 /************
 //-------------------------------
 // CABECERA
 //-------------------------------
 ************/
+/*
+recuadro de el header
+ */
 #main-header {
     background: #333;
     color: white;
     height: 80px;
-
     width: 100%;
     left: 0;
     top: 0;
     position: fixed;
 }
-#main-header a {
-    color: white;
-}
-
 /*
- * Logo
+  titulo izq pag
  */
-
 #logo-header {
     float: left;
-    padding: 15px 0 0 20px;
+    padding: 10px 0 0 20px;
     text-decoration: none;
 }
-#logo-header:hover {
-    color: #0b76a6;
-}
-
-
-#selections1 .site-name1 {
-    display: compact;
-    font-weight: 700;
-    font-size: 1.2em;
-    align-
-}
-#selections2 .site-name2 {
-    display: compact;
-    font-size: 20px;
-}
-
-#logo-header .site-name3 {
+/*
+  nombres del logo
+ */
+#logo-header .site-desc {
     display: block;
-    font-weight: 10;
-    font-size: 1.2em;
+    font-weight: 300;
+    font-size: 0.8em;
+    color: #999;
 }
-
-
-
-
-
 /*
  * Navegación
+ */
+#options{
+    position: relative;
+    right: 280px;
+}
+/*
+posiciones cabecera
  */
 nav {
     float: right;
@@ -206,21 +69,38 @@ nav ul li a:hover {
 }
 
 
-
+/*
+colores de texto
+cabeceras
+ */
+a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #ecf0f1;
+}
 
 /************
 //------------------------------
 // CONTENIDO
 //------------------------------
 ************/
+/*
+styles sobre
+el div central
+ */
+
 #main-content {
+    border-radius: 20px;
     background: white;
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
-
+/*
+posiciones
+div central
+ */
 #main-content header,
 #main-content .content {
     padding: 40px;
@@ -240,14 +120,6 @@ nav ul li a:hover {
     padding: 20px;
     margin-top: 40px;
 }
-#main-footer-log {
-    background: #575353;
-    color: white;
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-}
 #main-footer p {
     margin: 0;
 }
@@ -255,3 +127,96 @@ nav ul li a:hover {
 #main-footer a {
     color: white;
 }
+/************
+//-----------------------------
+// FORMULARIO ADD PET
+//-----------------------------
+************/
+
+
+/************
+//--------------------------------
+// GENERAL
+//-------------------------------
+************/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #666;
+    background: #f2f2f2;
+    font-size: 1em;
+    line-height: 1.5em;
+    padding-top: 80px;
+}
+
+/*
+Titulo ciudadanos de cautro patas
+ */
+
+h1 {
+    font-size: 2.3em;
+    line-height: 1.3em;
+    margin: 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+/*
+imagen bajo el titulo
+ */
+img {
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+}
+/*
+ contenedor del
+ romulario tamaño
+ */
+.container {
+    max-width: 200px;
+    margin: 20px auto;
+}
+/*
+tamaño y estilos
+del formulario
+ */
+input {
+    margin: 0 0 .4em 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.01);
+    border: 0;
+    border-bottom: 5px solid rgba(0,0,0,.12);
+    line-height: 40px;
+}
+
+label-form{
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    color: #333;
+    height: 20px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: right;
+    clear: both;
+}
+
+/*
+colores sobre el boton
+ */
+[type='submit'] {
+    color: white;
+    background-color: #2980b9;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
