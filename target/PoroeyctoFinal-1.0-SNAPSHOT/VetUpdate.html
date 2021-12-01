@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>OfficialPage</title>
+    <title>VetPage</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <head>
@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 <header id="main-header">
 
@@ -29,13 +28,9 @@
 
     <nav>
         <ul id="options">
-            <li><a href="#">Lista de Propietarios</a></li>
-            <li><a href="#">Lista de Mascotas</a></li>
-            <li><a href="#">Lista de Casos</a></li>
-            <li><a href="#">Lista de Visitas</a></li>
-            <li><a href="#">Chat</a></li>
-            <li><a href="#">Actualizar Datos</a></li>
-
+            <li><a href="#">Agregar Visita</a></li>
+            <li><a href="#">Ver mis Visitas</a></li>
+            <li><a href="#">Actualizar mis datos</a></li>
         </ul>
     </nav><!-- / nav -->
 </header><!-- / #main-header -->
@@ -44,22 +39,22 @@
 
     <article>
         <header>
-            <h1>Ver mis Casos</h1>
+            <h1>Actualización de datos</h1>
         </header>
 
         <img src="http://placekitten.com/800/250" alt="Gatito" />
 
-        <div class="table">
-            <table >
-                <tr> <th>Case Id</th> <th>Tipo</th>
-                </tr>
-                <tr> <td>0001</td>  <td>Fallecimiento</td>
-                </tr>
-                <tr> <td>0002</td>  <td>Perdida</td>
-                </tr>
 
-            </table>
-        </div>
+        <div class='container'>
+
+            <div class='form'>
+                <label>Dirección</label>
+                <input type="text" />
+                <label>Localidad</label>
+                <input type='text' />
+                <input type='submit' />
+            </div>
+            <div/><!-- /form -->
 
     </article> <!-- /article -->
 
@@ -69,7 +64,6 @@
     <p>&copy; 2014 <a href="https://github.com/Progamacion-web-ueb/PoroyectoFinal">GitHub</a></p>
 </footer> <!-- / #main-footer -->
 <script src="js/main.js"></script>
-
 
 
 </body>
